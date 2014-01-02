@@ -19,12 +19,12 @@ version 3.0][gnu-v3].
 ----
 
 If you [search][gh-weka-search] github for "`weka`", there are currently 256
-respository results including a few [unmaintained mirrors][baron-weka]. This is
+repository results including a few [unmaintained mirrors][baron-weka]. This is
 `nth + 1` WEKA repo mirror. 
 
-In my experience, it takes serveral hours to `checkout` the full svn repository
-and can take serveral minutes to update.  Checkout [svn2github][svngh] as the
-best alternative that can be found at this time.
+It can take serveral hours to `checkout` the full svn repository and can take
+serveral minutes to update.  Instead, use this repository or checkout
+[svn2github][svngh] as the best alternative that can be found at this time.
 
 
 [uofw]: http://www.waikato.ac.nz/ 
