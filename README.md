@@ -1,8 +1,8 @@
 weka (mirror) 
 =============
 
-This is a git mirror of the [The Univserity of Waikato][uofw]
-[WEKA][weka-home] project.
+This is a git mirror of the [The Univserity of Waikato][uofw] machine learning
+project [WEKA][weka-home].
 
 > Weka is a collection of machine learning algorithms for data mining tasks.
 > The algorithms can either be applied directly to a dataset or called from
@@ -10,8 +10,8 @@ This is a git mirror of the [The Univserity of Waikato][uofw]
 > classification, regression, clustering, association rules, and visualization.
 > It is also well-suited for developing new machine learning schemes.
 
-The official WEKA source code is hosted using subversion at
-[https://svn.cms.waikato.ac.nz/svn/weka/]. 
+The official WEKA source code is hosted using subversion at the [Waikato SVN
+server]( https://svn.cms.waikato.ac.nz/svn/weka/). 
 
 The current version of WEKA is licensed under the [GNU General Public license
 version 3.0][gnu-v3].
@@ -19,11 +19,12 @@ version 3.0][gnu-v3].
 ----
 
 If you [search][gh-weka-search] github for "`weka`", there are currently 256
-respository results including a few [unmaintained][baron-weka] mirrors. This is
-`nth + 1` WEKA repo mirror. In my experience, it takes serveral hours to
-`checkout` the full svn repository and can take serveral minutes to update.
-Checkout [svn2github][svngh] as the best alternative that can be found at this
-time.
+respository results including a few [unmaintained mirrors][baron-weka]. This is
+`nth + 1` WEKA repo mirror. 
+
+In my experience, it takes serveral hours to `checkout` the full svn repository
+and can take serveral minutes to update.  Checkout [svn2github][svngh] as the
+best alternative that can be found at this time.
 
 
 [uofw]: http://www.waikato.ac.nz/ 
