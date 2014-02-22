@@ -145,6 +145,7 @@ public abstract class HadoopJob extends DistributedJob implements OptionHandler 
 
   @Override
   public void setOptions(String[] options) throws Exception {
+    m_mrConfig.setOptions(options);
 
     String wekaPath = Utils.getOption("weka-jar", options);
     if (!DistributedJobConfig.isEmpty(wekaPath)) {
@@ -156,8 +157,6 @@ public abstract class HadoopJob extends DistributedJob implements OptionHandler 
 
     String logInt = Utils.getOption("logging-interval", options);
     setLoggingInterval(logInt);
-
-    m_mrConfig.setOptions(options);
   }
 
   /**
@@ -564,8 +563,8 @@ public abstract class HadoopJob extends DistributedJob implements OptionHandler 
     TaskCompletionEvent[] tcEvents = job.getTaskCompletionEvents(startIndex);
 
     StringBuilder taskMessages = new StringBuilder();
-    for (int i = 0; i < tcEvents.length; i++) {
-      taskMessages.append(tcEvents[i].toString()).append("\n");
+    for (TaskCompletionEvent tcEvent : tcEvents) {
+      taskMessages.append(tcEvent.toString()).append("\n");
     }
 
     logMessage(taskMessages.toString());
